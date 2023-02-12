@@ -22,7 +22,7 @@ export const userLogin = async (req = request, res = response) => {
     const validPassword = bcryptjs.compareSync(strPassword, passawordFind);
     if (!validPassword) {
       return res.status(400).json({
-        message: "Error: Invalid credentials",
+        error: "Error: Invalid credentials",
       });
     }
 

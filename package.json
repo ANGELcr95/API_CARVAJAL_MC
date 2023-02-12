@@ -37,6 +37,6 @@
     "uuid": "^9.0.0"
   },
   "eslintConfig": {
-    "extends":"./node_modules/standar/eslintrc.json"
+    "extends": "./node_modules/standar/eslintrc.json"
   }
 }

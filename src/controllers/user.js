@@ -4,6 +4,7 @@ import dotenv from "dotenv";
 dotenv.config();
 
 import User from "../models/user";
+import generatedJWT from "../helpers/generated-jwt";
 
 export const usersPost = async (req, res = response) => {
   try {
@@ -16,7 +17,7 @@ export const usersPost = async (req, res = response) => {
 
     if (userFind?.email) {
       return res.status(400).json({
-        message: `Error: User exist ${userFind?.email}`,
+        error: `Error: User exist ${userFind?.email}`,
       });
     }
 
@@ -26,11 +27,14 @@ export const usersPost = async (req, res = response) => {
 
     let user = await User.create(data);
 
+    const token = await generatedJWT(user.dataValues.id);
+
     delete user?.dataValues.password;
 
     res.status(201).json({ 
-      message: `Success: ${id} created`,
-      user 
+      message: `Success: user ${data.email} created`,
+      user,
+      token
     });
   } catch (error) {
     res.status(500).json({

@@ -8,6 +8,54 @@ import validatedJWT from "../middlewares/validated-jwt";
 
 const router = Router();
 
+// create user
+/**
+ * @swagger
+ * components:
+ *    schemas:
+ *      user:
+ *        type: object
+ *        properties:
+ *          name: 
+ *            type: string
+ *          last_name: 
+ *            type: string
+ *          email: 
+ *            type: string
+ *          country: 
+ *            type: string
+ *          cell_phone: 
+ *            type: int
+ *          address:  
+ *            type: string
+ *          password:  
+ *            type: string
+ *          state:  
+ *            type: boolean
+ *          image: 
+ *            type: string
+ *        required:
+ *          - name
+ *          - last_name
+ *          - email
+ *          - password
+ */
+
+/**
+ * @swagger
+ * /api/users:
+ *  post:
+ *    summary: create a new user
+ *    tags: [user]
+ *    requestBody:
+ *      required: true
+ *      content:
+ *        application/json:
+ *          schema:
+ *            type: object
+ *            $ref: '#/components/schemas/user'
+ */
+
 router.post(
   "/",
   [

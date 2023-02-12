@@ -1,0 +1,42 @@
+CREATE DATABASE IF NOT EXISTS db_carvajal_mc2;
+
+USE db_carvajal_mc2;
+
+CREATE TABLE IF NOT EXISTS users(
+    id INT NOT NULL AUTO_INCREMENT,
+    name VARCHAR(200) NOT NULL,
+    last_name VARCHAR(200) NOT NULL,
+    email VARCHAR(200) NOT NULL,
+    country VARCHAR(100),
+    cell_phone INT,
+    address VARCHAR(200),
+    image LONGTEXT,
+    password LONGTEXT,
+    state TINYINT(1),
+    createdAt TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    updatedAt TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    PRIMARY KEY (id)
+);
+
+CREATE TABLE IF NOT EXISTS type_contacts(
+    id INT NOT NULL AUTO_INCREMENT,
+    type VARCHAR(200),
+    createdAt TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    updatedAt TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    PRIMARY KEY (id)
+);
+
+CREATE TABLE IF NOT EXISTS contacts(
+    id INT NOT NULL AUTO_INCREMENT,
+    name VARCHAR(200) NOT NULL,
+    last_name VARCHAR(200) NOT NULL,
+    email VARCHAR(200) NOT NULL,
+    country VARCHAR(100),
+    cell_phone INT,
+    address VARCHAR(200),
+    type_id VARCHAR(200),
+    user_id VARCHAR(200),
+    createdAt TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    updatedAt TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    PRIMARY KEY (id),
+);

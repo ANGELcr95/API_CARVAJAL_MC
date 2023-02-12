@@ -1,0 +1,15 @@
+CREATE TABLE IF NOT EXISTS users(
+    id INT NOT NULL AUTO_INCREMENT,
+    name VARCHAR(200) NOT NULL,
+    last_name VARCHAR(200) NOT NULL,
+    email VARCHAR(200) NOT NULL,
+    country VARCHAR(100),
+    cell_phone INT,
+    address VARCHAR(200),
+    image LONGTEXT,
+    password LONGTEXT,
+    state TINYINT,
+    createdAt TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    updatedAt TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    PRIMARY KEY (id)
+);

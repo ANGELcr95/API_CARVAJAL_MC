@@ -33,12 +33,12 @@ Diagram UML [https://drive.google.com/file/d/1kzfUNTlb3LnasTaE6R63Uy4PxpHXuJEm/v
 
 ## Built platforms 🛠️
 
-Drawio
-Postman
-Railway
-Vercel
-Git Hub
-Clever cloud
+* Drawio
+* Postman
+* Railway
+* Vercel
+* Git Hub
+* Clever cloud
 
 ## Technologies 🛠️
 * ORM Sequelize

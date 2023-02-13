@@ -1,53 +1,48 @@
-## BACKEND 
-Languages:Node.js
-Version: 14.18.1
-## Dependencies
-### Production
-express (create url or routes)
-mysql2 (module contection DB, async and await)
-morgan (what type of query does the server receive ) 
-cors ( defines which devices can connect to the server ) 
-swagger-jsdoc ( documentation, poder cofigurar suagger ) 
-swagger-ui-express ( documentation: ver en una interfaz grafica )
-npm i multer(load of archives)
-npm i sharp (resize images)
-npm i fs (search img)
-npm i bcryptjs -S  (encript plan text)
-dotenv ( entorn variables )
-### Development
-nodemon ( reinit server )
-@babel/core ( transpilador )
-@babel/cli ( escribir comandos  desde consola )
-@babel/preset-env ( convertr j moderno a actual )
-@babel/node ( ejecute el codigo atraves de c node )
+# API CARVAJAL MC
 
-@babel/core
-@babel/cli
-@babel/preset-env
-@babel/node
+The api has the ability to update, delete, create, get, data that will serve as an intermediate layer in the flow of information to obtain a portal that is capable of generating a portal for the user
 
-## project tree
-### src
-Contain all code of server
+## Comenzando 🚀
+
+These instructions will allow you to get a working copy of the project on your local machine for development and testing purposes
 
 
-### steps
-1 crated script Build ()
-- lea todo lo de la carpeta src (busca ela rchivo index.js o si no lo rutea )y mandelo a dist 
-donde en src puedo tener culaquier ES6 a anterior en dist
-- creo otro comando(dev) para reiniciar mi servidor con
+See **Deployment** to learn how to deploy the project.
+In principle you clone the project of [https://github.com/ANGELcr95/API_CARVAJAL_MC](url), you go to your code editor and clone it previously having installed GIT as the following command (git clone url)
 
-2 created rest api
-estructuro esquelto
- -controllers: que es ejecutar una funcion dependiendo la ruta que es visitada,qui importo mi base  de  datos del fichero database.js
- -routes: las rutas que la aplicacion movl puede visitar
- -config.js: importo el modulo de sql
- -database.js: archivo para conectarme a una base de datos 
- -app.js: para tener mas orden solo confguracion de express
+You install node_modules in the terminal (npm install)
+Complete the environment variables that are as an example .env.example
+For the cloudinary key you go to the following portal [https://cloudinary.com/](url) creating a free user will generate the keys
+You run npm run dev by default it runs on port 3001
 
-3 craeted DB  
-- aplicacion de la base de datos (sql) solo guardar acrchivo de la estrucutura que se ejecuto en la consola de la base de datos(XAMPP)
+### Pre-requisitos 📋
 
-### compilated
-- run, npm run build
-- created script packaje json for run compilated (node dist)
+NodeJs
+Git
+Local DBMS (APACHE is required)
+POSTMAN (Query Platform)
+
+## Despliegue 📦
+
+Currently the API is in production, you can consult it [https://apicarvajalmc-production.up.railway.app](url)
+Or from the same API [https://apicarvajalmc-production.up.railway.app/api-doc/](url)
+Diagram UML [https://drive.google.com/file/d/1kzfUNTlb3LnasTaE6R63Uy4PxpHXuJEm/view?usp=sharing](url)
+
+## Construido como plataformas 🛠️
+
+use Drawio
+Postman
+Railway
+Vercel
+Git Hub
+Clever cloud
+
+## Tecnologias 🛠️
+* ORM Sequelize
+* NodeJs
+* SGBD (MySQL)
+
+## Autores ✒️
+
+* **Miguel Angel Camacho Ramierez** - *Ing - Developer* - [perfil](https://github.com/ANGELcr95)
+

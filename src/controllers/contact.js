@@ -33,7 +33,7 @@ export const contactsGet = async (req = request, res = response) => {
     });
 
     res.json({
-      message: `Success: ${user_id } contacts find successfully`,
+      message: `Success: ${resp?.length} contacts find`,
       contacts: resp,
     });
   } catch (error) {

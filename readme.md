@@ -1,6 +1,6 @@
 # API CARVAJAL MC
 
-The api has the ability to update, delete, create, get, data that will serve as an intermediate layer in the flow of information to obtain a portal that is capable of generating a portal for the user
+The api has the ability to update, delete, create, get, data that will serve as an intermediate layer in the flow of information to obtain a portal that is capable of generating a portal for the user,it has a login and validation of the information flow by JWT, raised in an MVC architecture.
 
 ## Starting 🚀
 
